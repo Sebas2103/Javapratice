@@ -15,6 +15,7 @@ public class Ejercicio4 {
 
         }
         System.out.println("El resultado es: "+y);
+        sc.close();
 
     }
 }

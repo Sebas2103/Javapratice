@@ -10,6 +10,7 @@ public class ejercicio2 {
         y=sc.nextInt();//lectura de la variable 
         z=x+y;
         System.out.println("El resultado es "+z);
+        sc.close();
         
     }
 }
