@@ -16,6 +16,7 @@ public class ciclofor {
 
         }
         System.out.println("la suma de los numeros ingresados es " + sum);
+        sc.close();
 
     }
 
