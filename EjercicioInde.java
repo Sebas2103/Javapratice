@@ -15,6 +15,7 @@ public class EjercicioInde {
 
         System.out.println("El valor  restante de la casa que le debe al banco es ");
         System.out.println("El valor  en cuota inicial es " + valorRestante);
+        sc.close();
 
     }
 }

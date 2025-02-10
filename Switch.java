@@ -13,7 +13,9 @@ public class Switch {
         case 2 -> val= Math.pow(100, v);// Funcion va exponencial
         case 3 -> val= (double)100/v; // Double obliga a que el resultado sea double
         default  -> val=0;
+
     }
+
     JOptionPane.showMessageDialog(null, "El resultado  de la funcion es : "+ val);
 
     
