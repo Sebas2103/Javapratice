@@ -4,7 +4,7 @@ public class matrices {
     // Realizar la suma de todos los elementos de un vector
     static Scanner sc = new Scanner(System.in);
 
-    // El
+
     public static void main(String[] args) {
         int tamaño;
         System.out.println("Ingrese el tamaño del vector");
