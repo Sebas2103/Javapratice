@@ -20,7 +20,7 @@ public class SumaDosvectores {
         mostrar_vector(vec2);
         sumar_vectores(vec1, vec2, vec3);
         System.out.println("vectores 3");
-        mostrar_vectores(vec3);
+        mostrar_vector(vec3);
 
     }
 
@@ -35,6 +35,15 @@ public class SumaDosvectores {
     public static void sumar_vectores(int a[], int b[], int c[]) {
         for (int i = 0; i < a.length; i++)
             c[i] = a[i] + b[i];
+    }
+
+    public static void mostrar_vector(int a[]){
+        for (int i=0;i<a.length;i++){
+            System.out.println(a[i]);
+
+        }
+        System.out.println();
+        
     }
 
 }

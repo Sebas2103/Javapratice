@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class aregloEstatico {
     // Son del mismo tipo de dato,tiene un tamaño finito
     // crear un vector en JAVA
-    int vec= new int[8];
+    
     // Va almacenar enteros,primero los defino como entero y con new pido memoria 8
     // espacios
     // Como acceder unvector de en una poscion determinada, usando java si quiero
