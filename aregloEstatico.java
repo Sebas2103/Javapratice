@@ -1,5 +1,5 @@
 
-
+/* 
 import java.util.Scanner;
 public class aregloEstatico {
     // Son del mismo tipo de dato,tiene un tamaño finito
@@ -51,4 +51,5 @@ public class aregloEstatico {
 
      }
 
-}   
+
+ */
