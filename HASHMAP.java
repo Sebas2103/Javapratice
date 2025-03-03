@@ -24,7 +24,7 @@ public class HASHMAP {
             System.out.println("5 Salir");
             opcion = sc.nextInt();
 
-        }
+        
         switch (opcion) {
             case 1:
 
@@ -54,6 +54,47 @@ public class HASHMAP {
                 break;
             default:
                 System.out.println("Tienes que introducir una opcion valida");
+        }
+    }
+        
+    }
+
+    public static void guardarProducto(String codigo, float precio, HashMap<String, Float> producto) {
+        if (producto.containsKey(codigo)) {
+            System.out.println("No se puede ingresa el producto.El codigo esta repetido");
+        } else {
+            producto.put(codigo, precio);
+        }
+    }
+
+    public static void modificarPrecio(String codigo, HashMap<String, Float> productos) {
+        Scanner sc = new Scanner(System.in);
+        if (productos.containsKey(codigo)) {
+            System.out.println("Introduce el precio de producto ");
+            productos.put(codigo, sc.nextFloat());
+
+        } else {
+            System.out.println("No hay ningun producto en ese codigo");
+        }
+    }
+
+    public static void mostrarProductos(HashMap<String, Float> productos) {
+        String clave;
+        Iterator<String> listaClavesProductos = productos.keySet().iterator();
+        System.out.println("Hay los siguientes productos ");
+        while (listaClavesProductos.hasNext()) {
+            clave = listaClavesProductos.next();
+            System.out.println(clave + "-" + productos.get(clave));
+        }
+
+    }
+
+    public static void elimminarProducto(String codigo, HashMap<String, Float> listaProductos) {
+        if (listaProductos.containsKey(codigo)) {
+            listaProductos.remove((codigo));
+
+        } else {
+            System.out.println("No hay ningun producto con ese codigo");
         }
 
     }
